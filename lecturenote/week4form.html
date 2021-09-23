@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Unit 4 Form
+        </title>
+    </head>
+    <body>
+        <form action="mailto:sunfandi@126.com" method="POST">
+            <!-- input is for short text
+            the value of the for attribute in label must match the 
+            value of the id attribute input-->
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fulln"><br>
+
+            <!-- textare is for lots of writing-->
+            <label for="complaints">Complaint:</label>
+            <textarea id="complaints" name="complaints">Write Your complaints here</textarea>
+            <br><br>
+
+            <label for="level">How angry?</label>
+
+            <input type="radio" id="level1" name="level" value="very angry">
+            <label for="level1">very angry</label>
+
+            <input type="radio" id="level2" name="level" value="Not very angry">
+            <label for="level2">not very angry</label>
+            <br>
+
+            <label for='contact'>Method of Contact:</label>
+            <select id="contact" name="contact">
+                <option value="email">E-mail</option>
+                <option value="phone">Phone</option>
+                <option value="snall mail">Snall Mail</option>
+            </select>
+            <br>
+
+            <label for="afterbiz">Call after 5pm?</label>
+            <input type="checkbox" id="afterbiz" name="after5pm" value="yes">
+            <br>
+
+            <input type="submit" value="Send My Complaint">
+
+        </form>
+    </body>
+</html>
