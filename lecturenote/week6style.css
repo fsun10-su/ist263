@@ -1,0 +1,20 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkmagenta;
+    font-size: 150%;
+    
+    /* WE ARE selecting all the paragraph, changing font, color and size */
+}
+h1 {
+    color:deeppink;
+    word-spacing: 3em;
+    letter-spacing: 1.1em;
+    /* you can lookup all different text effects in w3school */
+}
+p, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p a{
+    color: orange;
+    /* only changing links inside p tags */
+}
