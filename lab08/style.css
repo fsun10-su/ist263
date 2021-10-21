@@ -1,0 +1,63 @@
+body {
+    color: #FFFFFF;
+    background-color: #082032;
+}
+a {
+    color: #FCDAB7;
+}
+h1, h2 {
+    color: #FF4C29;
+}
+nav {
+    background-color: #2C394B;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+    color: #79B4B7;
+}
+nav a:hover {
+    background-color: #1E5F74;
+}
+.sentence {
+    float: right;
+}
+.copyright {
+    float: left;
+}
+.address {
+    float: left;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.links {
+    float: left;
+    /*padding-top: 1px;*/
+}
+.clear {
+    clear: both;
+}
+.part2 {
+    display: flex;
+    background-color: #404e91;
+    border-radius: 2em;
+    padding: 30px;
+    
+}
+.map {
+    flex: 1; order: 2;
+}
+.sendform {
+    flex: 1; order: 1;
+}
+.part1 {
+    background-color:#8b50f2;
+    margin-bottom: 50px;
+    border-radius: 2em;
+    padding-left: 30px;
+    padding-bottom: 25px;
+
+}
+
+
+/*#1D2D50*/
