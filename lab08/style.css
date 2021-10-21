@@ -20,7 +20,7 @@ nav a:hover {
     background-color: #1E5F74;
 }
 .sentence {
-    float: right;
+    text-align: right;
 }
 .copyright {
     float: left;
@@ -31,8 +31,7 @@ nav a:hover {
     margin-left: 300px;
 }
 .links {
-    float: left;
-    /*padding-top: 1px;*/
+    padding-top: 1px;
 }
 .clear {
     clear: both;
