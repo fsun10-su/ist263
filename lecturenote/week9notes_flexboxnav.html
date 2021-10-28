@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 5px;
+        }
+
+        .myrow1 {
+            margin-bottom: 15px;
+            justify-content: flex-end; 
+            /* right justifies inside flexbox */
+        }
+
+        .myrow2 {
+            justify-content: space-around;
+        }
+
+        .myrow3 {
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .outerflexbox {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Right justified navigation</p>
+    <div class="myrow1">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p> Equal space around all the flexbox columns. </p>
+    <div class="myrow2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p> All space distributed between the elements </p>
+    <div class="myrow3">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+
+    <p>Three flexboxes - an outer with two columns and then two nexted flexboxes inside those columns.</p>
+    <div class="outerflexbox">
+
+        <div class="myrow4">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </div>
+
+        <div class="social">
+            <div>Facebook</div>
+            <div>Twitter</div>
+        </div>
+
+    </div>
+</body>
+</html>
