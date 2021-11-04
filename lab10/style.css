@@ -100,4 +100,16 @@ aside {
 .myimg {
     max-width: 100%;
 }
+.nav_link {width: 100%;}
+
+@media only screen and (max-width:992px) {
+    span {display: none;}
+    nav div{
+        display: block;
+    }
+}
+@media only screen and (min-width: 992px) {
+    span {display: contents;}   
+}
+
 /*#1D2D50*/
