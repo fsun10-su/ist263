@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q&A</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function menuDisplay() {
+            var x = document.getElementById('menu');
+            if (x.style.display == 'none'){x.style.display = 'block';}
+            else {x.style.display = 'none';};
+        }
+        
+        // function menuHide() {
+        //     var x = document.getElementById('menu');
+        //     x.style.display = 'none';
+        // }
+    </script>
 </head>
 <body>
     <nav>
@@ -13,11 +25,24 @@
             <a href="project_home.html"><img src="../images/small_logo.png" alt="logo"></a>
         </div>
         <div class="nav_pages">
-            <div><a href="project_home.html">Home</a></div>   |
+            <a href="project_home.html">Home</a>   |
             <a href="Q&A.html">   Q&A</a>   |
-            <a href="services.html">   Services</a>
+            <a href="services.html" class="services_link">   Services</a>
         </div>
+        <div class="hb_buttom" onclick="menuDisplay();"><img src="../images/menu_img.png" alt="menu"></div>
     </nav>
+    <div id="menu">
+        <table>
+            <ul><li>Home</li></ul>
+            <ul><li>Q&A</li></ul>
+            <ul><li>Services</li></ul>
+        </table>
+    </div>
+    <!-- <div class="hb_list">
+        <div>Home</div>
+        <div>Q&A</div>
+        <div>Services</div>
+    </div> -->
 
     <div class="qa_title_image">
         <div class="qa_title">Q&A</div>

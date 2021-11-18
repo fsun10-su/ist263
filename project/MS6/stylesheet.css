@@ -6,13 +6,20 @@ nav {display: flex;
 }
 nav img {max-width: 100%;}
 /* .nav_pages div {display: inline;} */
-.nav_pages div {display: inline; height: 200%;}
+/* .nav_pages div {display: inline; height: 200%;} */
 .nav_pages a {
     font-size: 150%;
     line-height: 200%;
     margin-left: 2em;
     margin-right: 2em;
 }
+#menu {
+    float: right;
+    background-color: antiquewhite;
+    display: none;
+    padding-right: 15px;
+}
+.services_link {margin-right: 0em;}
 .qa_title_image {
     background-image: url(../images/qa_background1.png);
     background-repeat: no-repeat;
@@ -58,14 +65,18 @@ footer{
     flex: 1;
     line-height: 2em;
 }
+.hb_list{float: right;}
+.hb_buttom {margin-right: 5%;}
 
 @media only screen and (max-width: 600px) {
     footer {
         display: block;
         text-align: center;
     }
+    .nav_pages {display: none;}
 }
 
 @media only screen and (min-width: 600px) {
     .ft_line {display: none;}
+    .hb_buttom {display: none;}
 }

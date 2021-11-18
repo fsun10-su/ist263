@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // this is where our Javascript goes
+        // every line in javascrpt needs a ; at the end
+        function firstFunction() {
+            alert('Hello World!');
+        }
+        // functions are named blacks of code 
+        // you find errors in the console by inspecting
+        function secondFunction() {
+            alert('Second alert.');
+        }
+        function passwordMessage() {
+            alert('You did not type a password');
+        }
+    </script>
+</head>
+<body onload="firstFunction();">
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    </p>
+
+    <a href="" onclick="secondFunction()">This is an alert that will sat second alert</a>
+    <!-- onclike is an event, it will run the code inside secondFunction -->
+
+    <form>
+        <label for="username">Username: </label><br>
+        <input type='text' name='username' id="username"><br>
+        <label for="password">Password: </label><br>
+        <input type="text" name="password" id="passsword" onblur="passwordMessage();"><br><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
