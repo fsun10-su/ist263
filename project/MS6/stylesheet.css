@@ -16,7 +16,7 @@ nav img {max-width: 100%;}
 #menu {
     float: right;
     background-color: antiquewhite;
-    display: none;
+    display: block;
     padding-right: 15px;
 }
 .services_link {margin-right: 0em;}
