@@ -46,7 +46,7 @@ nav a:visited {color: #0946c0;}
 } */
 .qa_title {
     text-align: center;
-    color: coral;
+    color: #3E00FF;
     font-size: 3em;
     padding-top: 30px;
 }
@@ -86,6 +86,16 @@ footer{
 }
 .hb_list{float: right;}
 .hb_buttom {margin-right: 5%;}
+
+#skip {
+    position: absolute;
+    left: -999px;
+    background-color: darkslateblue;
+    color: white;
+}
+#skip:focus {
+    left: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     footer {
