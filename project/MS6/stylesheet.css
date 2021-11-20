@@ -33,23 +33,28 @@ nav a:visited {color: #0946c0;}
 }
 .services_link {margin-right: 0em;}
 .qa_title_image {
-    background-image: url(../images/qa_background1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 27%;
-    width: 90%;
-    margin: 0 auto;
+    text-align: center;
+    /* background-image: url(../images/qa_background1.png); */
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+    /* padding-bottom: 27%; */
+    /* padding-bottom: 17%; */
+    /* width: 90%; */
+    /* margin: 0 auto; */
+}
+.qa_title_image img {
+    max-width: 90%;
 }
 /* .qa_image {
     width: 90%;
     position: absolute;
 } */
-.qa_title {
+/* .qa_title {
     text-align: center;
-    color: #3E00FF;
+    color: #352EFF;
     font-size: 3em;
     padding-top: 30px;
-}
+} */
 .qa_main {
     margin-left: 15%;
     margin-right: 15%;
