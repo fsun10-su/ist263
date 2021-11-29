@@ -14,7 +14,10 @@ nav a:link {
     text-decoration: none;
     color: #0946c0;
 }
-.nav_pages a:hover {background-color: cornflowerblue;}
+.nav_pages a:hover {
+    background-color: cornflowerblue;
+    transition: 0.6s ease;
+}
 nav a:visited {color: #0946c0;}
 /* .nav_pages div {display: inline;} */
 /* .nav_pages div {display: inline; height: 200%;} */
@@ -55,11 +58,11 @@ nav a:visited {color: #0946c0;}
     font-size: 3em;
     padding-top: 30px;
 } */
-.qa_main {
+.qa_main, .main_services {
     margin-left: 15%;
     margin-right: 15%;
 }
-.qa_main article {
+.qa_main article, .service_detail {
     border-radius: 2em;
     border: 1.5px #2D2424 solid;
     padding-bottom: 15px;
@@ -101,6 +104,47 @@ footer{
 #skip:focus {
     left: 10px;
 }
+
+.service_title {text-align: center;}
+.service_content {
+    display: flex;
+    line-height: 1.5em;
+}
+.left {
+    flex: 0.5;
+    padding-left: 50px;
+}
+.right {flex: 1.5;}
+
+.purpose {
+    margin-top: 80px;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.home_article {margin-top: 80px;}
+.home_article h2 {text-align: center;}
+.article_text {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.home_art_text {
+    margin-top: -6px;
+    width: 545px;
+    border: black 2px solid;
+}
+.home_art_text p {
+    line-height: 130%;
+    text-indent: -2em;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     footer {
