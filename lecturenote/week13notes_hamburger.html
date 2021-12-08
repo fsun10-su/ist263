@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Part 2</title>
+        <style>
+            img {width: 40px;}
+            nav a:hover {background-color: lightseagreen;}
+            /* #hamicon {display: none;}  this turns of hamburger for everything */
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}  /* turns hamburger on at smaller screen size */
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                    }
+                #navlinks {display: none;}
+            }
+        </style>
+
+        <script>
+            function TurnNavOnOff() {
+                /* check to see if nav is on or off when we run function */
+                if (document.getElementById('navlinks').style.getPropertyValue('display') == 'block') {
+                    document.getElementById('navlinks').style.display = 'none';
+                }
+
+                else {
+                    document.getElementById('navlinks').style.display = 'block';
+                }
+
+                /* inside paranthesis true.false statement where we check the value of the display property, if it's on we turn it off and visa versa */
+
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamicon" onclick="TurnNavOnOff();">
+            <div id="navlinks">
+                <a href="index.html">Home</a> <span>|</span> 
+                <a href="skills.html">Skills</a> <span>|</span> 
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </body>
+</html>
+<!--
+    HTML
+    1. put a hamburger icon on screen
+    CSS - media query
+    2. turn hamburger icon on when screen gets smaller
+    CSS - media query
+    3. hide stacked nav when screen gets small
+
+    4. turn hamburger icon off when screen gets large
+    5. turn regular nav on when screen gets large
+    JavaScript - on an event
+    6. show stacked nav on click
+    7. hide it in scond click
+-->

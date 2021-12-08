@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:wght@300&family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Contact
+        </title>
+    </head>
+    <body>
+        <a href="#contact_content" id="skip" tabindex="1">Skip to Content</a>
+        <nav>
+            <a href="index.html" tabindex="2">Home</a> <span> | </span>
+            <a href="contact.html" tabindex="3">Contact</a><span> | </span>
+            <a href="skills.html" tabindex="4">Skills</a>
+        </nav>
+        <h1>Contact</h1>
+        <a id="contact_content"></a>
+        <div class="part1">
+            <section class="address">
+                <h2>Name:</h2>
+                <p>Fandi Sun</p>
+                <h2>Phone Number:</h2>
+                <p>218-216-4697</p>
+                <h2>Address:</h2>
+                <p>121 Lafayette Road</p>
+            </section>
+
+            <section class="links">
+                <h2>My LinkedIn Profile:</h2>
+                <a href="http://www.linkedin.com/in/fandi-sun" target = '_blank' tabindex="4"><img src="../images/logo-size.png" alt='LinkedIn Logo'></a>
+                <a href="http://www.linkedin.com/in/fandi-sun">LinkedIn</a>
+                <h2>Email:</h2>
+                <a href="mailto:fsun10@syr.edu" tabindex="5">Fandi Sun's Email</a>
+            </section>
+            <div class="clear"></div>
+
+        </div>
+
+
+        
+
+        <div class="part2">
+            <div class='map'>
+                <div class="mapouter" tabindex="5"><div class="gmap_canvas"><iframe width="449" height="310" id="gmap_canvas" src="https://maps.google.com/maps?q=121%20Lafayette%20Rd&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+            </div>
+
+            <div class='sendform'>
+                <form action="mailto:fsun10@syr.edu" method='POST' autocomplete="on">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" value="" tabindex="6"><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" value="" tabindex="7"><br>
+                    <input type="radio" id="Q" name="service" value="Questions" tabindex="8">
+                    <label for="Q">Questions</label>
+                    <input type="radio" id="A" name="service" value="Appointment" tabindex="9">
+                    <label for="A">Appointment</label>
+                    <input type="radio" id="Info" name="service" value="Ask For More Info" tabindex="10">
+                    <label for="Info">Ask For More Info</label><br>
+                    <label for="content">Content: </label><br>
+                    <textarea name="content" id="content" rows="10" cols="60" tabindex="11">You could Enter What You Want to Say Here.</textarea><br>
+                    <input type="submit" id="submit" value="Submit" tabindex="12">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

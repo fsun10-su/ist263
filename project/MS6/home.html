@@ -6,6 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Home Page</title>
+    <script>
+        var a = 1
+        function picChangeButton(n) {
+            a = a + n
+            if (a < 1) {
+                a = 3
+            }
+            else if (a > 3) {
+                a = 1
+            }
+            picChange(a)
+        }
+        function picOffAll() {
+            document.getElementById('pic1').style.display = 'none';
+            document.getElementById('pic2').style.display = 'none';
+            document.getElementById('pic3').style.display = 'none';
+        }
+
+        function picChange(n) {
+            var times = n
+            if (times == 1) {
+                picOffAll()
+                document.getElementById('pic1').style.display = 'block';
+            }
+            else if (times == 2) {
+                picOffAll()
+                document.getElementById('pic2').style.display = 'block';
+            }
+            else if (times == 3) {
+                picOffAll()
+                document.getElementById('pic3').style.display = 'block';
+            }
+            else if (times > 3) {
+                times = 1
+            }
+            else if (times < 1) {
+                times = 3
+            }
+        }
+        setInterval("picChangeButton(1)",7000);
+
+        function imageChangeButtonOn() {
+            document.getElementById('before_img').style.display = 'block';
+            document.getElementById('next_img').style.display = 'block';
+            
+        }
+
+        function imageChangeButtonOff() {
+            document.getElementById('before_img').style.display = 'none';
+            document.getElementById('next_img').style.display = 'none'
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -26,30 +78,33 @@
             <a href="services.html">   Services</a></div>
     </nav> -->
 
-    <div class="pic_slide">
-        <img src="../images/home-scroll-1.png" alt="Serveral Dogs">
-        <img src="../images/home-scroll-2.png" alt="pet medical Services">
-        <img src="../images/home-scroll-3.png" alt="pet salon">
+    <div class="pic_slide" onmouseover="imageChangeButtonOn();" onmouseout="imageChangeButtonOff();">
+        <div id="before_img" onclick="picChangeButton(-1);">❮</div>
+        <div id="next_img" onclick="picChangeButton(1);">❯</div>
+        <img src="../images/home-scroll-1.1.png" alt="Serveral Dogs" id="pic1">
+        <img src="../images/home-scroll-2.1.png" alt="pet medical Services" id="pic2">
+        <img src="../images/home-scroll-3.1.png" alt="pet salon" id="pic3">
     </div>
+    <!-- <button onclick="picChangeButton(-1);">❮</button>
+    <button onclick="picChangeButton(1);">❯</button> -->
 
     <div class="purpose">
         <h2>Our Service Purpose</h2>
         Love pets, love life, this is a dedicated service website for pet lovers, pet lovers are the focus, but also to provide pet services and pet supplies professional website. Choose ** pet network, healthy pet life from now on.
     </div>
-
     <div class="home_article">
         <h2>Articles</h2>`
         <div class="article_text">
             <div class="article_1">
                 <img src="../images/article_pic1(1).png" alt="pet_picture">
-                <div class="home_art_text">
+                <div class="home_art_text1">
                     <h4>Q: How long do Labradors live?</h4>
                     <p>Re: The life span of Labrador breeds is 8 to 12 years. Nowadays, many Labrador breeds can live beyond the age of 15. The key factor is the gradual improvement of medical standards and breeding standards. But need to pay attention to, do not raise the Labrador too fat, excessive exercise when young, unhealthy diet, etc..</p>
                 </div>
             </div>
             <div class="article_2">
                 <img src="../images/article_pic2(1).png" alt="pet_picture">
-                <div class="home_art_text"> 
+                <div class="home_art_text2"> 
                     <h4>Q: Could cat drink milk?</h4>
                     <p>Re: Because cats are lactose tolerant, milk can upset their intestines and stomach. Dry cat food is the first nutritional supplement for cats. Dry food is cheap, convenient and keeps cats nourished. If you have special needs, follow the doctor's advice that it is not a good idea to feed your cat too much food.</p>
                 </div>
