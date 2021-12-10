@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Services</title>
+    <script src="script.js"></script>
 </head>
 <body>
+    <a href="#main_content" id="skip" tabindex="1">Skip to Content</a>
     <nav>
         <div class="nav_logo">
             <a href="home.html"><img src="../images/small_logo.png" alt="logo"></a>
         </div>
-        <div class="nav_pages"><a href="home.html">Home</a>   |
-            <a href="q&a.html">   Q&A</a>   |
-            <a href="services.html">   Services</a></div>
+        <div class="nav_pages"><a href="home.html">Home</a>   <span>|</span>
+            <a href="q&a.html">   Q&A</a>   <span>|</span>
+            <a href="services.html">   Services</a>
+        </div>
+        <div class="hb_buttom" onclick="menuDisplay();"><img src="../images/menu_img.png" alt="menu"></div>
     </nav>
+
+    <div id="menu">
+        <ul>
+            <li><a href="home.html"> Home</a></li>
+            <li><a href="q&a.html"> Q&A</a></li>
+            <li><a href="services.html"> Services</a></li>
+        </ul>
+    </div>
 
     <div class="service_title">
         <!-- <h1>Services</h1> -->
         <img src="../images/service_background1.png">
     </div>
 
+    <a id="main_content"></a>
     <div class="main_services">
         <div class="service_detail">
             <h3>Yinuo Pet Grooming Store</h3>
@@ -130,7 +144,7 @@
             <div class="ft_nav">
                 <b>Navigation:</b><br>
                 <a href="home.html">Home</a><br>
-                <a href="Q&A.html">Q&A</a><br>
+                <a href="q&a.html">Q&A</a><br>
                 <a href="services.html">Services</a>
             </div>
         </footer>

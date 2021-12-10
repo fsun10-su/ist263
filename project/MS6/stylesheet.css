@@ -3,6 +3,7 @@ body {
     background-color: #FAEEE0;
     margin: 0px;
     color: #5C3D2E;
+    position: relative;
 }
 nav {display: flex;
     justify-content: space-between;
@@ -29,11 +30,15 @@ nav a:visited {color: #0946c0;}
     margin-right: 2em;
 }
 #menu {
-    float: right;
+    z-index: 3;
+    position: absolute;
+    right: 0px;
     background-color: antiquewhite;
     display: none;
-    padding-right: 15px;
+    padding-right: 20px;
+    line-height: 2em;
 }
+#menu a {text-decoration: none;}
 .services_link {margin-right: 0em;}
 .service_title img {max-width: 100%;}
 .qa_title_image {
@@ -195,6 +200,7 @@ footer{
     margin-right: 5%;
 }
 .advertise img {width: 100%;}
+.hb_buttom {margin-top: 15px;}
 
 
 
@@ -207,7 +213,7 @@ footer{
     }
     .nav_pages {display: none;}
     .ft_line {display: block;}
-
+    .hb_buttom {display: block;}
 }
 @media only screen and (max-width: 920px) {
     .article_text {
@@ -224,10 +230,5 @@ footer{
         border-left: none;
         border-right: none;
         border-bottom: none;
+    }
 }
-
-
-/* @media only screen and (min-width: 600px) {
-    .ft_line {display: none;}
-    .hb_buttom {display: none;}
-} */
