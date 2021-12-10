@@ -115,13 +115,14 @@ footer{
 .article_text {
     display: flex;
     justify-content: space-around;
-    border: black solid 3px;
+    /* border: black solid 3px; */
 }
 .home_art_text1, .home_art_text2 {
     border-left: black solid 3px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
-    margin-top: -3%;
+    margin-top: -5%;
+    padding-top: 3%;
     /* width: 70%; */
     /* margin-left: auto;
     margin-right: auto; */
@@ -188,7 +189,12 @@ footer{
 .ft_line {display: none;}
 .hb_buttom {display: none;}
 .home_article img {max-width: 100%;}
-.advertise {margin-top: 20%;}
+.advertise {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.advertise img {width: 100%;}
 
 
 
@@ -206,9 +212,18 @@ footer{
 @media only screen and (max-width: 920px) {
     .article_text {
         display: block;
+        text-align: center;
     }
     .article_1 img {width: 550px;}
     .home_art_text1 {margin-bottom: 5%;}
+    .article_1, .article_2 {width: 100%;}
+    .article_1 p {text-align: left;}
+    .article_2 p {text-align: left;}
+    .home_art_text1, .home_art_text2 {
+        margin-top: 5px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
 }
 
 
