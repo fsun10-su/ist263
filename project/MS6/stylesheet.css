@@ -211,7 +211,7 @@ footer{
         display: block;
         text-align: center;
     }
-    .article_1 img {width: 550px;}
+    .article_1 img {width: 100%;}
     .home_art_text1 {margin-bottom: 5%;}
     .article_1, .article_2 {width: 100%;}
     .article_1 p {text-align: left;}
