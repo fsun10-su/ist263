@@ -184,7 +184,7 @@ footer{
 }
 .ft_line {display: none;}
 .hb_buttom {display: none;}
-.home_article img {max-width: 100%;}
+.home_article img {width: 100%;}
 .advertise {
     margin-top: 5%;
     margin-left: 5%;
