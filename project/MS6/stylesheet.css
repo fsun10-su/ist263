@@ -71,7 +71,7 @@ footer{
     flex: 1;
 }
 .ft_logo img {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 .ft_contact {
