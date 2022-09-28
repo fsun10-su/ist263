@@ -38,7 +38,7 @@ nav a:visited {color: #0946c0;}
 }
 #menu a {text-decoration: none;}
 .services_link {margin-right: 0em;}
-.service_title img {max-width: 100%;}
+.service_title img {width: 100%;}
 .qa_title_image {
     text-align: center;
     margin-left: 3%;
@@ -71,7 +71,7 @@ footer{
     flex: 1;
 }
 .ft_logo img {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
 }
 .ft_contact {
@@ -150,7 +150,7 @@ footer{
 }
 
 .pic_slide img {
-    max-width: 100%;
+    width: 100%;
 }
 .pic_slide {
     z-index: 1;
